@@ -1,0 +1,145 @@
+.app-header {
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 3rem;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(20px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 4px 30px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo {
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+.logo-icon {
+
+  font-size: 1.8rem;
+}
+
+.logo-text {
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00e5ff,
+      #8a2be2,
+      #ff00ff
+    );
+
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo {
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav {
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+
+  position: relative;
+
+  text-decoration: none;
+
+  color: #334155;
+  font-weight: 700;
+
+  padding: 12px 20px;
+
+  border-radius: 30px;
+
+  transition: all .3s ease;
+}
+
+/* Hover Effect */
+
+nav a:hover {
+
+  color: white;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  transform: translateY(-3px);
+}
+
+/* Active Route */
+
+nav a.active {
+
+  color: white;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00e5ff,
+      #8a2be2
+    );
+
+  box-shadow:
+    0 0 15px #00e5ff,
+    0 0 30px rgba(138,43,226,.5);
+}
+
+
+
+
+
+
+
+
+.app-footer {
+  background-color: #f9fafb;
+  color: #555;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  border-top: 1px solid #e5e7eb;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

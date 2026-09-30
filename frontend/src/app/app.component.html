@@ -1,0 +1,53 @@
+<header class="app-header">
+  <div class="logo">
+    <div class="logo-circle"></div>
+      <a routerLink="/home" class="logo">
+      <span class="logo-icon">⚡</span>
+
+      <span class="logo-text">
+        EmployeeHub
+      </span>
+    </a>
+  </div>
+  <nav>
+    <!-- routerLinkActive="active" is an Angular directive that adds a CSS 
+    class to the link when its route is currently active.
+    If the user is on /login, Angular automatically adds the class active to this Anchor tag.
+    routerLinkActive is purely for styling active links, not for security.  -->
+
+    <a
+      routerLink="/home"
+      routerLinkActive="active"
+      routerLinkActive="active">
+      Home
+    </a>
+
+    <a
+      routerLink="/login"
+      routerLinkActive="active">
+      Login
+    </a>
+
+    <a
+      routerLink="/register"
+      routerLinkActive="active">
+      Register
+    </a>
+
+    <a
+      routerLink="/dashboard"
+      routerLinkActive="active">
+      Dashboard
+    </a>
+
+  </nav>
+</header>
+
+
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="app-footer">
+  <p>&copy; 2026 This is Employee Registration App.</p>
+</footer>
